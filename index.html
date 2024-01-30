@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .pricing-tables{
+      font-family:  Tahoma, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+      background-color: rgb(100, 96, 96);
+      overflow: auto;
+    }
+
+    .tables{
+      background-color: yellow;
+      padding: 20px;
+      width: 400px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      
+    }
+
+
+    ul li{
+      list-style: none;
+      font-size:1.3rem ;
+      font-weight: 500;
+      padding-top: 25px;
+    }
+
+    .title{
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-top: 15px;
+    }
+
+    .price{
+      font-size:2rem ;
+      font-weight: bolder;
+      margin-top: 15px;
+    }
+
+    .button{
+      margin-bottom: 18px ;
+      margin-top: 25px;
+      width: 7vw;
+      padding: 11px;
+      background-color: rgb(232, 186, 102);
+      border: 3px solid rgb(53, 50, 50);
+      border-radius: 30px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }  
+
+    .button:hover{
+      color: white;
+      background-color: black;
+      width: 10vw;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    @media(max-width:1250px){
+      .pricing-tables{
+      flex-direction: column;
+      height: 100%;
+      
+    }
+    
+ 
+  }
+
+  @media(min-width:200px) and (max-width:1249px) {
+    .button{
+      font-size: 10px;
+      width: 30vw;
+    }
+    .button:hover{
+      font-size: 10px;
+      width: 30vw;
+    } 
+  }
+    
+  </style>
+</head>
+<body>
+  <div class="pricing-tables">
+
+    <div class="tables">
+      <div class="title"> Basic </div>
+      <div class="price">$11.99/month</div>
+     <ul>
+      <li>✅10gb Storage</li>
+      <li>✅1 User</li>
+      <li>🚫Support</li>
+     </ul>
+      <button class="button"> Sign Up </button>
+    </div>
+
+    <div class="tables">
+      <div class="title"> Standard </div>
+      <div class="price">$19.99/month</div>
+     <ul>
+      <li>✅50gb Storage</li>
+      <li>✅5 User</li>
+      <li>✅ Phone & Email Support</li>
+     </ul>
+      <button class="button"> Sign Up </button>
+    </div>
+
+    <div class="tables">
+      <div class="title"> Premium </div>
+      <div class="price">$49.99/month</div>
+     <ul>
+      <li>✅100gb Storage</li>
+      <li>✅10 User</li>
+      <li>✅ 24/7 Support</li>
+     </ul>
+      <button class="button"> Sign Up </button>
+    </div>
+
+
+  </div>
+</body>
+</html>
